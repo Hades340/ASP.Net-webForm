@@ -1,0 +1,11 @@
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\DAO_JustShop.dll.config
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\DAO_JustShop.dll
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\DAO_JustShop.pdb
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\EntityFramework.dll
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\EntityFramework.SqlServer.dll
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\EntityFramework.xml
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\bin\Debug\EntityFramework.SqlServer.xml
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\obj\Debug\DAO_JustShop.csproj.CoreCompileInputs.cache
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\obj\Debug\DAO_JustShop.csproj.CopyComplete
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\obj\Debug\DAO_JustShop.dll
+E:\HOC_IT\Back_End_C#\JustShop\DAO_JustShop\obj\Debug\DAO_JustShop.pdb

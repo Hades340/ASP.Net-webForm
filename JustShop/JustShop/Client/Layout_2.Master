@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout_2.Master.cs" Inherits="JustShop.Client.Layout_1" %>
+
+<%@ Register Src="~/Client/dropMenu.ascx" TagPrefix="uc1" TagName="dropMenu" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>Just Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/Client/template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Client/template/css/index.css">
+    <!-- Bootstrap CSS -->
+    <script src="~/Client/template/JS/jquery-3.4.1.min.js"></script>
+    <script src="~/Client/template/JS/bootstrap.min.js"></script>
+    <script src="~/Client/template/JS/action.js"></script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    
+</head>
+<body style="background-image: url(/Client/template/img/body.png); height: auto;">
+    <form id="form1" runat="server">
+        <!-- Start menu -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-white Menu ">
+             <asp:HyperLink runat="server" CssClass="navbar-brand Logo" ImageUrl="/Client/template/img/logo.jpg" NavigateUrl="~/Client/Views/Trangchu/Home.aspx"></asp:HyperLink>
+       
+        <button class="navbar-toggler d-lg-none MenuBtn text-left" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <div class="collapse navbar-collapse mb-2 Left" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <asp:HyperLink runat="server" CssClass="nav-link Main" Text="Trang chủ" NavigateUrl="~/Client/Views/Trangchu/Home.aspx"></asp:HyperLink>
+                </li>
+                <li class="nav-item">
+                      <asp:HyperLink runat="server" CssClass="nav-link Main" NavigateUrl="~/Client/Views/GioiThieu/gioithieu.aspx" Text="Giới thiệu"></asp:HyperLink>
+                   
+                </li>
+                <li class="nav-item dropdown">
+                      <asp:HyperLink runat="server" CssClass="nav-link Main dropdown-toggle" NavigateUrl="~/Client/Views/SanPham/sanphamAll.aspx" Text="Sản phẩm"></asp:HyperLink>
+                   
+                   
+                    <uc1:dropMenu runat="server" id="dropMenu" />
+                </li>
+                <li class="nav-item">
+                    <asp:HyperLink runat="server" CssClass="nav-link Main" NavigateUrl="~/Client/Views/TinTuc/TinTuc.aspx" Text="Tin tức"></asp:HyperLink>
+             
+                </li>
+                <li class="nav-item">
+                    <asp:HyperLink runat="server" CssClass="nav-link Main" NavigateUrl="~/Client/Views/GioHang/GioHang.aspx" Text="Giỏ hàng"></asp:HyperLink>
+            
+                </li>
+                <li class="nav-item">
+                    <asp:HyperLink runat="server" CssClass="nav-link Main" NavigateUrl="~/Client/Views/PhanHoi/LienHe.aspx" Text="Liên hệ"></asp:HyperLink>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <!-- End menu -->
+         <!-- Start body -->
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <!-- End body -->
+       <div class="footer">
+        <!-- bắt đầu footer -->
+        <div class="container Ft">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="diachi">
+                        <h5>Thời gian làm việc</h5>
+                        <p class="Thongbao">Thời gian làm việc của chúng tôi là: Thứ 2 - thứ 6: 8 giờ sáng - 8 giờ tối Thứ 7: 9 giờ sáng - 4 giờ chiều Chủ nhật: đóng cửa</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="diachi">
+                        <h5>Thông tin</h5>
+                        <p class="Thongbao">Địa chỉ: 14 Phạm Quý Thích, P.Tân Quý, Q.Tân Phú, TPHCM <br>Hotline: 0945.518.538 <br> Hotline: 0906.308.380 <br>Email: info@123corp.vn</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="diachi">
+                        <h5>Danh mục sản phẩm</h5>
+                        <nav class="nav ">
+                            <a class="nav-link them" href="#">Bánh kẹo</a>
+                            <a class="nav-link them" href="#">Trái cây</a>
+                            <a class="nav-link them" href="#">ít CupCakes</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="diachi">
+                        <h5>Nhận báo giá</h5>
+                        <p class="Thongbao">
+                            Email
+                            <input class="mt-1" type="text" style="width:216px;height:37px;border-radius:5px ;border:none">
+                            <input type="button" class="btn btn-primary mt-2" value="Đăng ký">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <div class="backTop">
+            <img src="~/Client/template/img/back.png" alt="">
+        </div>
+    </div>
+        <div class="backTop">
+        <img src="~/Client/template/img/back.png" alt="">
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    </form>
+</body>
+</html>
